@@ -8,10 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/DeathWorld.unity
-    guid: 93f739a25d1aeb047a5a2d0baf45711a
-  - enabled: 1
-    path: Assets/Scenes/FinishScene.unity
-    guid: 3f34788c1cba0ba4dbf679e61eda992e
   m_configObjects: {}
