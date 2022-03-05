@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public string playScene;
+    public string sceneName;
     public void PlayGame()
     {
-        SceneManager.LoadScene(playScene);
+        sceneName = "SampleScene";
+        SceneManager.LoadScene(sceneName);
     }
 
     public void QuitGame()
     {
+        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 }
