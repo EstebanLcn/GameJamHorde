@@ -310,10 +310,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 196879030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6134131cceb1db49bf1ab3c73630bbd, type: 3}
+  m_Script: {fileID: 11500000, guid: c5910b9f124554a43a3d0817198278ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playScene: SampleScene
+  sceneName: 
 --- !u!114 &196879032
 MonoBehaviour:
   m_ObjectHideFlags: 0
