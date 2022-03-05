@@ -26,7 +26,8 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        _rb.velocity = new Vector2(0, _playerDirection.y * _playerSpeed);
+        _playerSpeed += 0.001f;
+        _rb.velocity = new Vector2(_playerSpeed, _playerDirection.y * _playerSpeed);
         Debug.Log(_rb);
     }
 
