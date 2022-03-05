@@ -9,11 +9,16 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] tiles;
     public GameObject player;
+    public GameObject pauseMenu;
+    public GameObject inGameUI;
+
 
     private Vector3 lastEndPoint;
 
     private void Start()
     {
+        pauseMenu.SetActive(false);
+
         lastEndPoint = GameObject.Find("EndPoint").transform.position;
 
         for(int i=0; i<START_LOADING_LEVEL_AMOUNT; i++)
@@ -30,9 +35,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+        }
+    }
+
     private void SpawnLevelPart()
     {
         Transform levelPartTransform = Instantiate(tiles[Random.Range(0, tiles.Length)].transform, lastEndPoint, Quaternion.identity);
         lastEndPoint = levelPartTransform.Find("EndPoint").position;
+    }
+
+    public void PauseGame()
+    {
+        pauseMenu.SetActive(true);
+        inGameUI.SetActive(false);
+        Time.timeScale = 0;
     }
 }
