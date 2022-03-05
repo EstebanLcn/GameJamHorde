@@ -42,7 +42,6 @@ public class Spawner : MonoBehaviour
             {
                 _objectToBeDestroyed = Instantiate(_spawner, new Vector2(transform.position.x, Random.Range(transform.position.y - 3, transform.position.y + 3)), Quaternion.identity);
             }
-            
       _timeBetweenSpawn = _startTimeBetweenSpawn;
     }
     else
