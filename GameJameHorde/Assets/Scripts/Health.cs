@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour
+public class HealthClean : MonoBehaviour
 {
     int currentHeartsNum;
     public Image[] hearts;
