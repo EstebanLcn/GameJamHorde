@@ -6,10 +6,10 @@ public class CollectibleClean : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other.tag);
 
         if (other.tag == "Player")
         {
-            Debug.Log(other.tag);
             scoreManager.AddPoints(1);
             Destroy(gameObject);
         }

@@ -28,6 +28,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Quit()
     {
+        pauseMenu.SetActive(false);
+
         sceneName = "MainMenu";
         SceneManager.LoadScene(sceneName);
     }
