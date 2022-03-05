@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
   {
     _playerSpeed += 0.001f;
     _rb.velocity = new Vector2(_playerSpeed, _playerDirection.y * _playerSpeed);
-    Debug.Log(_rb);
+   
   }
 
   private void OnCollisionEnter(Collision collision)

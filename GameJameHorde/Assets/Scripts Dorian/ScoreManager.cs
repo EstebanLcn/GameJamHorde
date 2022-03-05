@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
     int currentScore;
     int minScore = 0;
     public Text scoreText;
+    public StaminaBar StaminaBar;
     string scoreString;
 
 
@@ -17,20 +18,13 @@ public class ScoreManager : MonoBehaviour
         int currentScore = 0;
     }
 
-    private void Update()
-    {//////////////////////////////////////////////////////   POUR TESTER  ////////////////////////////////////////////////////////////
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            AddPoints(5);
-        }
-     }
-        ///
-
-        void AddPoints(int points)
+        public void AddPoints(int points)
     {
         currentScore += points;
         scoreString = currentScore.ToString();
         scoreText.text = scoreString;
+
+        StaminaBar.AddStamina();
     }
 
 }

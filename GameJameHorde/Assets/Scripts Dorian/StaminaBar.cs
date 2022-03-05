@@ -12,18 +12,6 @@ public class StaminaBar : MonoBehaviour
         slider.value = 0;
     }
 
-    private void Update()
-    {//////////////////////////////////////////////////////   POUR TESTER  ////////////////////////////////////////////////////////////
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            AddStamina();
-        }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            ResetStamina();
-        }
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    }
 
     public void AddStamina()
     {
