@@ -4,48 +4,49 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private int _health = 1;
-    private int _scoreBoard = 0;
+  public int _health = 1;
+  private int _scoreBoard = 0;
 
-    public float _playerSpeed;
-    private Rigidbody2D _rb;
-    private Vector2 _playerDirection;
+  public float _playerSpeed;
+  private Rigidbody2D _rb;
+  private Vector2 _playerDirection;
 
-    // Start is called before the first frame update
-    void Start()
+  // Start is called before the first frame update
+  void Start()
+  {
+    _rb = GetComponent<Rigidbody2D>();
+  }
+
+  // Update is called once per framedd
+  void Update()
+  {
+    float directionY = Input.GetAxisRaw("vertical");
+    _playerDirection = new Vector2(0, directionY).normalized;
+  }
+
+  void FixedUpdate()
+  {
+    _playerSpeed += 0.001f;
+    _rb.velocity = new Vector2(_playerSpeed, _playerDirection.y * _playerSpeed);
+    Debug.Log(_rb);
+  }
+
+  private void OnCollisionEnter(Collision collision)
+  {
+    if (collision.gameObject.tag == "Obstacle")
     {
-        _rb = GetComponent<Rigidbody2D>();
+      _health -= 1;
+      Debug.Log(_health);
     }
-
-    // Update is called once per framedd
-    void Update()
+    if (collision.gameObject.tag == "Ennemy")
     {
-        float directionY = Input.GetAxisRaw("vertical");
-        _playerDirection = new Vector2(0, directionY).normalized;
+      _health -= 1;
+      Debug.Log(_health);
     }
+  }
 
-    void FixedUpdate()
-    {
-        _rb.velocity = new Vector2(0, _playerDirection.y * _playerSpeed);
-        Debug.Log(_rb);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Obstacle")
-        {
-            _health -= 1;
-            Debug.Log(_health);
-        }
-        if(collision.gameObject.tag == "Ennemy")
-        {
-            _health -= 1;
-            Debug.Log(_health);
-        }
-    }
-
-    private void OnTriggerEnter(Collider collectible)
-    {
-        Destroy(gameObject);
-    }
+  private void OnTriggerEnter(Collider collectible)
+  {
+    Destroy(gameObject);
+  }
 }
