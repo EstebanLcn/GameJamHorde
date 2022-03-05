@@ -28,7 +28,6 @@ public class Player : MonoBehaviour
   {
     _playerSpeed += 0.001f;
     _rb.velocity = new Vector2(_playerSpeed, _playerDirection.y * _playerSpeed);
-    Debug.Log(_rb);
   }
 
   private void OnCollisionEnter(Collision collision)
@@ -36,12 +35,10 @@ public class Player : MonoBehaviour
     if (collision.gameObject.tag == "Obstacle")
     {
       _health -= 1;
-      Debug.Log(_health);
     }
     if (collision.gameObject.tag == "Ennemy")
     {
       _health -= 1;
-      Debug.Log(_health);
     }
   }
 
