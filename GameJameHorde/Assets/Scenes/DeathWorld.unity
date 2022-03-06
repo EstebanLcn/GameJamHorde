@@ -2793,31 +2793,39 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8466144217665689189, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
       propertyPath: m_Size.x
-      value: 5.607933
+      value: 0.8200024
       objectReference: {fileID: 0}
     - target: {fileID: -8466144217665689189, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
       propertyPath: m_Size.y
-      value: 4.888604
+      value: 1.2717808
       objectReference: {fileID: 0}
     - target: {fileID: -8466144217665689189, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
       propertyPath: m_Offset.x
-      value: -0.03586197
+      value: -0.035861045
       objectReference: {fileID: 0}
     - target: {fileID: -8466144217665689189, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
       propertyPath: m_Offset.y
-      value: -0.19282949
+      value: -0.21309513
       objectReference: {fileID: 0}
     - target: {fileID: 1969441171009409161, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1969441171009409161, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3931448
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969441171009409161, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.91840947
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969441171009409161, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.2203
       objectReference: {fileID: 0}
     - target: {fileID: 1969441171009409161, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.3305
       objectReference: {fileID: 0}
     - target: {fileID: 1969441171009409161, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3361,7 +3369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelName: FinishScene
-  stamina: {fileID: 0}
 --- !u!114 &1233641154
 MonoBehaviour:
   m_ObjectHideFlags: 0
