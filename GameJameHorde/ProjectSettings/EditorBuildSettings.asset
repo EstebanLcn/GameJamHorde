@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DeathWorld.unity
     guid: 93f739a25d1aeb047a5a2d0baf45711a
   - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: c3d88f99ef774624db40851f9492aa97
+  - enabled: 1
     path: Assets/Scenes/FinishScene.unity
     guid: 3f34788c1cba0ba4dbf679e61eda992e
   m_configObjects: {}

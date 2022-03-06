@@ -3357,10 +3357,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1233641152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de736b0cd1c97242832e2458c3def40, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b47e9e1e311335478f5853226158570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: SampleScene
+  LevelName: FinishScene
+  stamina: {fileID: 0}
 --- !u!114 &1233641154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3370,7 +3371,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1233641152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88c271631aa233d4ca776638f729aabc, type: 3}
+  m_Script: {fileID: 11500000, guid: a2ccd9f30c6bbac459560189f816e332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 1
@@ -3664,8 +3665,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2092512799}
-  - component: {fileID: 2092512798}
   - component: {fileID: 2092512797}
+  - component: {fileID: 2092512800}
   m_Layer: 0
   m_Name: spawner
   m_TagString: Untagged
@@ -3694,22 +3695,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2092512798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092512796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5588ecf62777c74caae8c45e3dced3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spawner: {fileID: 1776651823}
-  _spawner2: {fileID: 6427254271492934937, guid: 35fd2cfad14d19c4d87a7ed6eb5517c5, type: 3}
-  _spawnerSpeed: 5
-  _startTimeBetweenSpawn: 2
 --- !u!4 &2092512799
 Transform:
   m_ObjectHideFlags: 0
@@ -3724,6 +3709,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2092512800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092512796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7da64ac5a21804aa5d9c287496fe35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawner: {fileID: 1776651823}
+  _spawnerSpeed: 5
+  _startTimeBetweenSpawn: 2
 --- !u!1 &2095815482 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 844253657101279275, guid: 754aa53b1f26bbc4ea903d2b1ba09a8c, type: 3}

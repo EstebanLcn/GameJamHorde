@@ -10,9 +10,12 @@ public class Player : MonoBehaviour
   public float _playerSpeed;
   private Rigidbody2D _rb;
   private Vector2 _playerDirection;
-
-  // Start is called before the first frame update
-  void Start()
+    public StaminaBarClean staminaBar;
+    public SpriteRenderer spriteRenderer;
+    public Sprite newSprite;
+    public Sprite oldSprite;
+    // Start is called before the first frame update
+    void Start()
   {
     _rb = GetComponent<Rigidbody2D>();
   }
@@ -22,6 +25,15 @@ public class Player : MonoBehaviour
   {
     float directionY = Input.GetAxisRaw("vertical");
     _playerDirection = new Vector2(0, directionY).normalized;
+
+        if(staminaBar.slider.value == 1)
+        {
+            spriteRenderer.sprite = newSprite;
+        }
+        else
+        {
+            spriteRenderer.sprite = oldSprite;
+        }
   }
 
   void FixedUpdate()

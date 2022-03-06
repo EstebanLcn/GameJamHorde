@@ -565,6 +565,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 1
   _playerSpeed: 3
+  staminaBar: {fileID: 1480340843}
+  spriteRenderer: {fileID: 581101168}
+  newSprite: {fileID: 3674531158413063538, guid: 7ec83537b509b4245a9a03f3bc62e092, type: 3}
+  oldSprite: {fileID: 7641597568212162823, guid: bb4cd598dd062c147b6e6476dd674611, type: 3}
 --- !u!114 &581101173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,7 +581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de736b0cd1c97242832e2458c3def40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: DeathWorld
+  LevelName: WinScene
+  stamina: {fileID: 1480340843}
 --- !u!4 &854904962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1969441171009409161, guid: 2ce4ea787c26b444c9dddc312af342a5, type: 3}
@@ -3934,6 +3939,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 844253657101279275, guid: 754aa53b1f26bbc4ea903d2b1ba09a8c, type: 3}
   m_PrefabInstance: {fileID: 1480340836}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1480340843 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8692457138558165037, guid: 754aa53b1f26bbc4ea903d2b1ba09a8c, type: 3}
+  m_PrefabInstance: {fileID: 1480340836}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480340838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c70ea793e31521429751a3c057e0154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1511622214
 GameObject:
   m_ObjectHideFlags: 0
