@@ -12,7 +12,7 @@ public class Touched : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Collider2D collider = collision.collider;
-        if ((collider.gameObject.layer == LayerMask.NameToLayer("Wall") || collider.gameObject.layer == LayerMask.NameToLayer("Enemy")) && stamina.slider.value >= 1)
+        if ((collider.gameObject.layer == LayerMask.NameToLayer("Wall") || collider.gameObject.layer == LayerMask.NameToLayer("Enemy")) && stamina.slider.value >= 5)
         {
             SceneManager.LoadScene(LevelName);
         }
