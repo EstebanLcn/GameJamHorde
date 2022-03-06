@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     float directionY = Input.GetAxisRaw("vertical");
     _playerDirection = new Vector2(0, directionY).normalized;
 
-        if(staminaBar.slider.value == 1)
+        if(staminaBar.slider.value == 5)
         {
             spriteRenderer.sprite = newSprite;
         }

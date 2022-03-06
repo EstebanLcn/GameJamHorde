@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class StaminaBarClean : MonoBehaviour
 {
     public Slider slider;
-    int maxStamina = 10;
+    int maxStamina = 5;
 
     private void Start()
     {
