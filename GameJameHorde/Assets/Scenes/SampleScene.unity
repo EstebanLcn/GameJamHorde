@@ -568,7 +568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 1
-  _playerSpeed: 3
+  _playerSpeed: 5
   staminaBar: {fileID: 1480340843}
   spriteRenderer: {fileID: 581101168}
   newSprite: {fileID: 3674531158413063538, guid: 7ec83537b509b4245a9a03f3bc62e092, type: 3}
@@ -4121,7 +4121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawner: {fileID: 1870429280}
   _spawner2: {fileID: 504815461}
-  _spawnerSpeed: 3
+  _spawnerSpeed: 5
   _startTimeBetweenSpawn: 3
 --- !u!4 &1520022934
 Transform:

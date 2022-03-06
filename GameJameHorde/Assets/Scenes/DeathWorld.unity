@@ -3439,7 +3439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 1
-  _playerSpeed: 5
+  _playerSpeed: 7
 --- !u!61 &1233641155
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3786,7 +3786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawner: {fileID: 1776651823}
-  _spawnerSpeed: 5
+  _spawnerSpeed: 7
   _startTimeBetweenSpawn: 2
 --- !u!1 &2095815482 stripped
 GameObject:
