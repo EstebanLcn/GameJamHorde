@@ -9,7 +9,7 @@ public class ScoreManagerClean : MonoBehaviour
     int minScore = 0;
     public Text scoreText;
     public StaminaBarClean StaminaBar;
-    string scoreString;
+    public string scoreString;
 
 
     // Start is called before the first frame update

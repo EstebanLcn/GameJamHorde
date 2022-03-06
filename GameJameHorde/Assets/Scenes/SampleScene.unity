@@ -3902,6 +3902,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 472
       objectReference: {fileID: 0}
+    - target: {fileID: 4645535953122807264, guid: 754aa53b1f26bbc4ea903d2b1ba09a8c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 261.9017
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645535953122807264, guid: 754aa53b1f26bbc4ea903d2b1ba09a8c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 214.2262
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645535953122807264, guid: 754aa53b1f26bbc4ea903d2b1ba09a8c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645535953122807264, guid: 754aa53b1f26bbc4ea903d2b1ba09a8c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434404273379506852, guid: 754aa53b1f26bbc4ea903d2b1ba09a8c, type: 3}
+      propertyPath: m_Text
+      value: "YOU WON \nAS A HUMAN"
+      objectReference: {fileID: 0}
     - target: {fileID: 9080502167459943918, guid: 754aa53b1f26bbc4ea903d2b1ba09a8c, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4286,6 +4306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1480340837}
   StaminaBar: {fileID: 1480340840}
+  scoreString: 
 --- !u!1001 &8413161385697876379
 PrefabInstance:
   m_ObjectHideFlags: 0
